@@ -1,0 +1,95 @@
+<!-- <p>roles works!</p>
+<div class="row">
+    <div class="col-3">
+        <p>{{ firstNmae}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{currentDate}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{isActive}}</p>
+    </div>
+    <div class="col-3">
+        <p>{{selectedState}}</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <input type="text" [value]="firstNmae" class="form-control"/> 
+    </div>
+    <div class="col-3">
+        <input type="text" [(ngModel)]="firstNmae">
+    </div>
+
+    <div class="col-3">
+        <input [type]="inputType" >
+    </div>
+    <div class="col-3">
+        <select [(ngModel)]="selectedState">
+            <option value="AP">AP</option>
+            <option value="MH">MH</option>
+            <option value="TS">TS</option>
+        </select>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showWelcomeAlert()">Show alert</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showMessage('welcome Fastapi')">Show React Message</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-danger" (click)="showMessage('welcome Python')">Show React Message</button>
+    </div> 
+</div> -->
+
+
+
+
+
+
+
+<!-- <div class="row">
+    <div class="col-4">
+        <ul>
+            <li *ngFor="let item of roleList">{{ item.role_text }} </li>
+        </ul>
+    </div>
+    <div class="col-4">
+        <select>
+            <option *ngFor="let item of roleList" [value]="item.role_id">{{ item.role_text }}</option>
+        </select>
+    </div>
+</div> -->
+
+
+
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Role_id</th>
+                    <th>Role_Text</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of roleList;let srno=index">
+                    <td>
+                        {{srno}}
+                    </td>
+                    <td>
+                        {{item.role_text}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
