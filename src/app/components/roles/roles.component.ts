@@ -13,6 +13,8 @@ import { CommonModule } from '@angular/common';
 })
 export class RolesComponent implements OnInit {
 
+
+  
   // roleList:any [] =[];
   roleList:IRole [] =[];
   http=inject(HttpClient)
@@ -23,8 +25,8 @@ export class RolesComponent implements OnInit {
 
 
   getAllRoles(){
-    this.http.get("http://127.0.0.1:8000/User_router/get_user").subscribe((res:any)=>{
-      this.roleList=res.result;
+    this.http.get("https://freeapi.miniprojectideas.com/api/ClientStrive/GetAllRoles").subscribe((res:any)=>{
+      this.roleList=res.data;
     })
   }
 

@@ -75,17 +75,17 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Role_id</th>
-                    <th>Role_Text</th>
+                    <th>roleId</th>
+                    <th>role</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let item of roleList;let srno=index">
                     <td>
-                        {{srno}}
+                        {{srno+1}}
                     </td>
                     <td>
-                        {{item.role_text}}
+                        {{item.role}}
                     </td>
                 </tr>
             </tbody>
